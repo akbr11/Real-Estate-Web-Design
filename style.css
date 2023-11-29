@@ -1,0 +1,21 @@
+@font-face {
+  font-family: NunitoLight;
+  src: url(./fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: NunitoBold;
+  src: url(./fonts/Poppins/Poppins-Bold.ttf);
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+.img-logo {
+  width: 100px;
+}
+
+li {
+  font-family: NunitoLight;
+}
