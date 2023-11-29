@@ -19,3 +19,30 @@ body {
 li {
   font-family: NunitoLight;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: NunitoBold;
+}
+
+p {
+  font-family: NunitoLight;
+  color: #b2c8ba;
+}
+
+.navbar-scrolled {
+  background-color: #0f0f0f;
+  border-bottom: 1px solid #b2c8ba;
+}
+
+.bg-section {
+  background-image: url("./images/bg_section1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  image-rendering: pixelated;
+}

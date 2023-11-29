@@ -17,25 +17,23 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container my-2">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" class="img-logo img-fluid" alt="">
             </a>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <i class="bi bi-list-nested" style="color: #fff;"></i>
+                <i class="bi bi-list" style="color: #fff;"></i>
             </button>
-            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-            <div class="offcanvas offcanvas-end bg-black navbar-nav" tabindex="-1" id="offcanvasExample"
+            <div class="navbar-nav offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title text-white" id="offcanvasExampleLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close border-0" style="color: #fff;" data-bs-dismiss="offcanvas">
-                        <i class="bi bi-x-lg"></i>
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn shadow-none" data-bs-dismiss="offcanvas">
+                        <i class="bi bi-x-lg" style="color: #ffff;"></i>
                     </button>
                 </div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 text-center">
                     <li class="nav-item">
                         <a class="text-capitalize text-white nav-link active" aria-current="page" href="#">about
                             us</a>
@@ -48,7 +46,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             reviews
                         </a>
-                        <ul class="dropdown-menu bg-black">
+                        <ul class="dropdown-menu bg-dark">
                             <li><a class="text-capitalize text-white dropdown-item" href="#">Action</a></li>
                             <li><a class="text-capitalize text-white dropdown-item" href="#">Another action</a></li>
                             <li>
@@ -65,18 +63,47 @@
                         <a class="text-capitalize text-white nav-link">contact us</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <button class="btn btn-outline-warning">
+                <div class="navbar-nav">
+                    <button class="btn btn-outline-info text-capitalize">
                         sign in
                     </button>
                 </div>
             </div>
-            <!-- </div> -->
         </div>
     </nav>
 
+    <section class="my-5 py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="text-white">Discover your perfect property</h1>
+                </div>
+                <div class="col-md-6 my-1">
+                    <div class="d-flex flex-column align-items-start">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga suscipit culpa, corporis magni
+                            eius
+                            animi tempora totam consequatur modi repellat fugiat. Veniam nihil quis vel, voluptatem modi
+                            dolor
+                            ducimus excepturi?</p>
+                        <button class="btn btn-info text-capitalize">contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <div class="rounded-5 shadow bg-section"></div>
+    </div>
 
 
+
+    <script>
+        const navEl = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            navEl.classList.toggle('navbar-scrolled', window.scrollY > 0);
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
